@@ -1,22 +1,22 @@
-Amazon Clone
+🚀 Amazon Clone
 
 A fully responsive Amazon clone built with React, Tailwind CSS, and JavaScript, featuring product carousels, navigation, and interactive UI components.
 
-Features
+✨ Features
 
-Fully responsive Home & Kitchen product carousel
+🏠 Fully responsive Home & Kitchen product carousel
 
-Horizontal scrollable product cards with smooth arrows
+↔️ Horizontal scrollable product cards with smooth arrows
 
-Clean and modern UI inspired by Amazon
+🎨 Clean and modern UI inspired by Amazon
 
-Interactive buttons, hover effects, and card layouts
+✨ Interactive buttons, hover effects, and card layouts
 
-Mobile-friendly layout with horizontal scroll support
+📱 Mobile-friendly layout with horizontal scroll support
 
-Easy-to-extend component-based architecture
+🛠 Easy-to-extend component-based architecture
 
-Technologies Used
+🛠 Technologies Used
 
 React – For building dynamic, component-based UI
 
