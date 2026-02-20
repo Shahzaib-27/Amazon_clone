@@ -24,7 +24,7 @@ export default function HeroSection() {
   return (
     
     <section className="w-full flex justify-center ">
-      <div className="relative max-w-[1400px] w-full">
+      <div className="relative max-w-[1400px] w-full  transition-all duration-200 ease-in-out">
         {/* IMAGE */}
         <img
           src={images[current]}

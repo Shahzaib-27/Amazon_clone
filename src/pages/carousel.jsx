@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CardGrid() {
   const items = [
+
     { title: "Cleaning Tools", img: cardimages.cleaning },
     { title: "Home Storage", img: cardimages.storage },
     { title: "Home Decor", img: cardimages.decor },
@@ -20,20 +21,20 @@ export default function CardGrid() {
     { title: "Shirt", img: cardimages.shirt },
     { title: "Watches", img: cardimages.watches },
   ];
-
+  
   const scrollRef = useRef(null);
-
+  
   const scrollLeft = () => {
     scrollRef.current.scrollBy({ left: -1050, behavior: "smooth" });
   };
-
+  
   const scrollRight = () => {
     scrollRef.current.scrollBy({ left: 1050, behavior: "smooth" });
   };
 
   return (
-    <div className="w-full max-w-[1350px] bg-white p-4 mx-auto mt-10 mb-10">
-      <h2 className="ml-2 font-bold text-2xl">Best Sellers in Home & Kitchen</h2>
+    <div className="w-full max-w-[1350px] bg-white p-4 mx-auto mt-10 mb-10 relative bottom-60 ">
+      <h2 className="ml-2 font-bold text-2xl ">Best Sellers in Home & Kitchen</h2>
 
       <div className="relative mt-4">
         {/* LEFT ARROW */}
