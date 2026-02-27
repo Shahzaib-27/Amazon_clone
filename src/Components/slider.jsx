@@ -14,6 +14,19 @@ export default function CardGrid() {
     { title: "hanger", img: cardimages.hanger },
     { title: "cooler", img: cardimages.cooler },
     { title: "beter", img: cardimages.beter },
+    { title: "beter", img: cardimages.bedding },
+    { title: "beter", img: cardimages.cleaning},
+    { title: "beter", img: cardimages.storage },
+    { title: "beter", img: cardimages.cooker },
+    { title: "beter", img: cardimages.cups },
+    { title: "beter", img: cardimages.dress },
+    { title: "beter", img: cardimages.dumbells },
+    { title: "beter", img: cardimages.gloves },
+    { title: "beter", img: cardimages.hats },
+    { title: "beter", img: cardimages.jeans },
+    { title: "beter", img: cardimages.pillow },
+    { title: "beter", img: cardimages.shirt },
+    { title: "beter", img: cardimages.watches },
   ];
 
   const scrollRef = useRef(null);
@@ -27,7 +40,7 @@ export default function CardGrid() {
     };
   
     return (
-      <div className="w-full max-w-[1350px] bg-white p-4 mx-auto mt-10 mb-10 relative bottom-60 ">
+      <div className="w-full max-w-[1550px] bg-white p-4 mx-auto mt-10 mb-10 relative bottom-60 ">
         <h2 className="ml-2 font-bold text-2xl ">Best Sellers in Home </h2>
   
         <div className="relative mt-4">
