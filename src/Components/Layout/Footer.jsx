@@ -1,5 +1,6 @@
 import React from 'react'
 import { Globe } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -105,14 +106,14 @@ const footerLinks = [
     ],
   ];
 
-
-
+  
 return (
 <div>
    <div className='cursor-pointer text-center bg-[#37475A] text-white p-3 font-medium
     hover:bg-[#4a5869]'>
     {/* button */}
-    <button type='button' className='p-1 cursor-pointer'>
+    <button type='button' className='p-1 cursor-pointer'
+    onClick={() => window.scrollTo({top: 0, behavior: "smooth",})}>
       <h3>Back to top</h3>
     </button>
     </div>   
@@ -131,16 +132,18 @@ return (
       </h3>
 
       {/* Links */}
-      <ul className="space-y-2 mb-10 text-sm text-gray-600 ">
-        {item.a1 && <li className="text-white  cursor-pointer">{item.a1}</li>}
-        {item.a2 && <li className="text-white  cursor-pointer">{item.a2}</li>}
-        {item.a3 && <li className="text-white  cursor-pointer">{item.a3}</li>}
-        {item.a4 && <li className="text-white  cursor-pointer">{item.a4}</li>}
-        {item.a5 && <li className="text-white  cursor-pointer">{item.a5}</li>}
-        {item.a6 && <li className="text-white  cursor-pointer">{item.a6}</li>}
-        {item.a7 && <li className="text-white  cursor-pointer">{item.a7}</li>}
-        {item.a8 && <li className="text-white  cursor-pointer">{item.a8}</li>}
-      </ul>
+      <a href="*" target='_blank'>
+        <ul className="space-y-2 mb-10 text-sm text-gray-600 ">
+          {item.a1 && <li className="text-white  cursor-pointer">{item.a1}</li>}
+          {item.a2 && <li className="text-white  cursor-pointer">{item.a2}</li>}
+          {item.a3 && <li className="text-white  cursor-pointer">{item.a3}</li>}
+          {item.a4 && <li className="text-white  cursor-pointer">{item.a4}</li>}
+          {item.a5 && <li className="text-white  cursor-pointer">{item.a5}</li>}
+          {item.a6 && <li className="text-white  cursor-pointer">{item.a6}</li>}
+          {item.a7 && <li className="text-white  cursor-pointer">{item.a7}</li>}
+          {item.a8 && <li className="text-white  cursor-pointer">{item.a8}</li>}
+        </ul>
+      </a>
     </div>
   ))}
   
@@ -200,8 +203,10 @@ return (
             className="flex flex-col space-y-2 space-x-2 ">
             {column.map((link, index) => (
               <div key={index}>
-                <h4 className="text-sm font-semibold text-white/80 mt-2">{link.title}</h4>
-                <p className="text-xs mb-5 text-white/50">{link.desc}</p>
+                <a href="*" target='_blank'>
+                  <h4 className="text-sm font-semibold text-white/80 mt-2">{link.title}</h4>
+                  <p className="text-xs mb-5 text-white/50">{link.desc}</p>
+                </a>
               </div>
             ))}
           </div>
